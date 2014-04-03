@@ -1,0 +1,4 @@
+cdn
+===
+
+CDN for component
