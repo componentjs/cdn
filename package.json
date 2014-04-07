@@ -1,0 +1,36 @@
+{
+  "name": "component-cdn",
+  "description": "CDN for Component",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "license": "MIT",
+  "repository": "component/cdn",
+  "dependencies": {
+    "debug": "*",
+    "component-builder-www": "*",
+    "gitproximus": "*",
+    "koa": "~0.5.1",
+    "koa-cdn": "^1.0.0",
+    "koa-static": "^1.4.3",
+    "koa-compress": "^1.0.4"
+  },
+  "devDependencies": {
+    "koa-logger": "^1.2.0",
+    "rimraf": "^2.2.0",
+    "mocha": "^1.13",
+    "supertest": "~0.10.0"
+  },
+  "main": "app",
+  "scripts": {
+    "start": "node --harmony-generators app",
+    "test": "NODE_ENV=test mocha --harmony-generators --reporter spec --bail --timeout 10s"
+  },
+  "engines": {
+    "node": ">= 0.11.12"
+  }
+}
